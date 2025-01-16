@@ -21,7 +21,7 @@ require('dotenv').config(); // Load environment variables
 const express = require('express'); // Import Express
 const cors = require('cors'); // Import CORS middleware
 const mongoose = require('mongoose'); // Import Mongoose
-const authRoutes = require('./routes/authroute'); // Import authentication routes
+const authRoutes = require('./routes/suthRoute'); // Import authentication routes
 const paymentRoutes = require('./routes/paymentRoute'); // Import payment routes
 
 const app = express(); // Initialize Express
