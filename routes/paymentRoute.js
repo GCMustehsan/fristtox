@@ -1,5 +1,5 @@
 const express = require('express');
-const { createCharge } = require('../controllers/paymentController');
+const { createCharge } = require('../controllers/paymentcontroller');
 const router = express.Router();
 
 router.post('/create-charge', createCharge);

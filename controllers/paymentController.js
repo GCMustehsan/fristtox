@@ -55,8 +55,8 @@
 // };
 
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
-const Payment = require('../models/Payment');
-const User = require('../models/User');
+const Payment = require('../models/payment');
+const User = require('../models/user');
 
 exports.createCharge = async (req, res) => {
   try {

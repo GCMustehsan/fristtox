@@ -21,7 +21,7 @@ require('dotenv').config(); // Load environment variables
 const express = require('express'); // Import Express
 const cors = require('cors'); // Import CORS middleware
 const mongoose = require('mongoose'); // Import Mongoose
-const authRoutes = require('./routes/authRoute'); // Import authentication routes
+const authRoutes = require('./routes/authroute'); // Import authentication routes
 const paymentRoutes = require('./routes/paymentRoute'); // Import payment routes
 
 const app = express(); // Initialize Express
@@ -41,7 +41,9 @@ app.use(express.json());
 // Import database connection
 const connectDB = require('./config/db');
 connectDB(); // Connect to the MongoDB database
-
+app.get('/', (req, res) => {
+  res.status(200).send('Server is running!');
+});
 // Mount routes
 app.use('/api', authRoutes); // Use authentication routes
 app.use('/api', paymentRoutes); // Use payment routes
