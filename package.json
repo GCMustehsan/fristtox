@@ -1,0 +1,31 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@emailjs/nodejs": "^5.0.2",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.7",
+    "emailjs": "^4.0.3",
+    "emailjs-com": "^3.2.0",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "node-fetch": "^2.7.0",
+    "nodemailer": "^6.9.16",
+    "nodemon": "^3.1.9",
+    "react-router-dom": "^7.1.1",
+    "stripe": "^17.5.0",
+    "uuid": "^11.0.5"
+  }
+}
