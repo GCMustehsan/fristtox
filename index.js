@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 8080; // Use environment PORT or default to 808
 
 // Import and use cors middleware to handle CORS errors
 const corsOptions = {
-  origin: 'http://localhost:3000', // Allow requests only from your frontend
+  origin: 'https://fristtox-d5ep.vercel.app', // Allow requests only from your frontend
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
   credentials: true, // Allow cookies or authorization headers
 };
