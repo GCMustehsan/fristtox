@@ -1,22 +1,3 @@
-// require('dotenv').config();
-// const express = require('express');
-// const mongoose = require('mongoose');
-// const authRoutes = require('./routes/authRoute');
-// const paymentRoutes = require('./routes/paymentRoute');
-
-// const app = express();
-// const PORT = process.env.PORT || 8080;
-
-// app.use(express.json());
-// const connectDB = require('./config/db');
-// connectDB();
-
-// app.use('/api', authRoutes);
-// app.use('/api', paymentRoutes);
-
-// app.listen(PORT, () => {
-//   console.log(`Server is running on http://localhost:${PORT}`);
-// });
 require('dotenv').config(); // Load environment variables
 const express = require('express'); // Import Express
 const cors = require('cors'); // Import CORS middleware
